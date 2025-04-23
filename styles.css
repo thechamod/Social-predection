@@ -1,19 +1,19 @@
-/* modern-styles.css */
+/* styles.css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --primary-color: #e53935;
-  --primary-light: #ff6f61;
-  --secondary-color: #d32f2f;
-  --text-color: #2d2d2d;
-  --light-text: #757575;
-  --border-color: #e0e0e0;
-  --bg-color: #fbe9e7;
+  --primary-color: #5b86e5;
+  --primary-light: #36d1dc;
+  --secondary-color: #fc466b;
+  --text-color: #333;
+  --light-text: #6c757d;
+  --border-color: #dee2e6;
+  --bg-color: #f8f9fa;
   --card-color: #ffffff;
-  --input-bg: #fff3f3;
-  --success-color: #43a047;
-  --warning-color: #fdd835;
-  --error-color: #d32f2f;
+  --input-bg: #f2f7ff;
+  --success-color: #2ecc71;
+  --warning-color: #f39c12;
+  --error-color: #e74c3c;
 }
 
 * {
@@ -152,7 +152,7 @@ input {
 input:focus {
   border-color: var(--primary-color);
   outline: none;
-  box-shadow: 0 0 10px rgba(229, 57, 53, 0.3), 0 0 20px rgba(229, 57, 53, 0.2);
+  box-shadow: 0 5px 15px rgba(91, 134, 229, 0.1);
   transform: translateY(-2px);
 }
 
@@ -194,7 +194,7 @@ button::before {
 
 button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(229, 57, 53, 0.4);
+  box-shadow: 0 7px 20px rgba(91, 134, 229, 0.4);
 }
 
 button:hover::before {
@@ -211,8 +211,7 @@ button:active {
   padding: 20px;
   background-color: #fff;
   border-radius: 12px;
-  border-left: 4px solid #e53935;
-  background-color: #fff0f0;
+  border-left: 4px solid var(--primary-color);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   transform: translateY(20px);
   opacity: 0;
@@ -315,7 +314,7 @@ button:active {
 /* Background effect elements */
 .floating-shape {
   position: absolute;
-  background: rgba(255, 0, 0, 0.07);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 50%;
   z-index: 0;
 }
@@ -432,7 +431,7 @@ button:active {
   }
   
   body {
-    background: linear-gradient(135deg, #ff8a80, #e53935);
+    background: linear-gradient(135deg, #2b2b2b, #1a1a1a);
   }
   
   .container::before {
